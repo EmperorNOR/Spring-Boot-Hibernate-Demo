@@ -1,0 +1,31 @@
+<!Doctype html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<link rel="stylesheet" type="text/css" href="Styling.css">
+<title>Registration</title>
+</head>
+<body>
+<ul class="ListClass">
+  <li class="ListElemClass"><a href="home">Home</a></li>
+    <li class="ListElemClass"><a href="registration" style="z-index: 999;">Registration</a></li>
+    <li class="ListElemClass"><a href="participants" style="z-index: 999;">Participants</a></li>
+    <li class="ListElemClass"><a href="about" style="z-index: 999;">About</a></li>
+</ul> 
+<h1>Extreme Ultra</h1>
+<h2>Registration Form</h2>
+<form method="post" action="/signup">
+ <label for="fname">Name:</label><br>
+<input type="text" name="person_name"></input><br>
+ <label for="fname">Age:</label><br>
+<input type="text" name="person_age"></input><br>
+ <label for="fname">Address:</label><br>
+<input type="text" name="person_address"></input><br>
+ <label for="fname">Zipcode:</label><br>
+<input type="text" name="person_zipcode"></input><br>
+ <label for="fname">E-Mail:</label><br>
+<input type="text" name="person_mail"></input><br>
+<button type="submit">Submit</button>
+</form>
+<p><bold>© Hardanger Ultra As</bold></p>
+</body>
+</html>

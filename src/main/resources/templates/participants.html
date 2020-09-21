@@ -1,0 +1,29 @@
+<!Doctype html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<link rel="stylesheet" type="text/css" href="Styling.css">
+<title>Participants</title>
+</head>
+<body>
+<ul class="ListClass">
+  <li class="ListElemClass"><a href="home">Home</a></li>
+    <li class="ListElemClass"><a href="registration" style="z-index: 999;">Registration</a></li>
+    <li class="ListElemClass"><a href="participants" style="z-index: 999;">Participants</a></li>
+    <li class="ListElemClass"><a href="about" style="z-index: 999;">About</a></li>
+</ul> 
+<h1>Extreme Ultra</h1>
+<h2>Participants</h2>
+<table>
+<tr>
+<td>Name</td>
+<td>Age</td>
+<td></td>
+</tr>
+<tr th:each="person: ${person}">
+<td><p th:text="${person.person_name}"></p></td>
+<td><p th:text="${person.person_age}"></p></td>
+</tr>
+</table>
+<p><bold>© Hardanger Ultra As</bold></p>
+</body>
+</html>
